@@ -15,8 +15,8 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 25px;
   color: #000;
   font-weight: 500;
   font-family: "Poppins"; }
@@ -79,6 +79,16 @@ button:focus {
   border-top: 2px solid #b68c2f;
   width: 100px; }
 
+.border-golden {
+  border: 1px solid #b68c2f; }
+
+.btn-circle {
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px; }
+
 /* -----------------------------------
 
 HEADINGS
@@ -91,6 +101,18 @@ h4,
 h5,
 h6 {
   font-family: 'Cabin', sans-serif; }
+
+h3 {
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: #000;
+  font-weight: 500;
+  -webkit-transition: all 350ms ease-out;
+  -o-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+  position: relative;
+  font-family: "Poppins"; }
 
 h1 {
   text-transform: uppercase;
@@ -122,7 +144,7 @@ h5 {
   -ms-transition: all 350ms ease-out; }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 25px;
   color: #000;
   font-weight: 500;
@@ -223,10 +245,10 @@ HEADER
   border: 1px solid #b68c2f; }
 
 .link-hover {
-  border: 1px solid transparent; }
+  border: 2px solid transparent; }
 
 .link-hover:hover {
-  border: 1px solid #b68c2f;
+  border-bottom: 2px solid #b68c2f;
   transition-duration: 1s; }
 
 .link-hover .link-icon-hover {
@@ -270,8 +292,9 @@ textarea {
   font-family: "Poppins"; }
 
 header {
-  background: url(../img/hero.jpg);
+  background: url(../img/hero.png);
   background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh; }
@@ -283,7 +306,8 @@ header {
 .js--wp-4,
 .js--wp-5,
 .js--wp-6,
-.js--wp-7 {
+.js--wp-7,
+.js--wp-8 {
   opacity: 0; }
 
 .js--wp-1 .animated,
@@ -292,7 +316,8 @@ header {
 .js--wp-4 .animated,
 .js--wp-5 .animated,
 .js--wp-6 .animated,
-.js--wp-7 .animated {
+.js--wp-7 .animated,
+.js--wp-8 .animated {
   opacity: 1;
   -webkit-animation-duration: 0.9s;
   animation-duration: 0.9s; }
