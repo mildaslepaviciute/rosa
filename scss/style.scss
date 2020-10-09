@@ -1,9 +1,17 @@
 
-/*---------------------- VARIABLES -----------------------*/
+/* -----------------------------------
+
+VARIABLES
+
+-------------------------------------*/
 
 $golden:  #b68c2f;
 
-/* -----------------------------------  MAIN INFO  -------------------------------------*/
+/* -----------------------------------
+
+MAIN INFO
+
+-------------------------------------*/
 
 * {
   margin: 0;
@@ -18,20 +26,16 @@ html {
   scroll-behavior: smooth;
 }
 
-.modal {
-  scroll-behavior: smooth;
-}
-
 body {
-    font-size: 14px;
-    line-height: 25px;
-    color: #000;
-    font-weight: 500;
-    font-family: "Poppins";
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Poppins";
 }
 
-.text-black {
-  color: #000;
+.pointer {
+  cursor: pointer;
 }
 
 .card {
@@ -47,40 +51,20 @@ a:hover {
 }
 
 .bg-black {
-    background-color: #121212;
+  background-color: #121212;
 }
 
-.bg-golden {
-    background-color: $golden;
-}
-
-.text-golden {
-    color: $golden;
+.text-black {
+  color: #000;
 }
 
 .w-95 {
   width: 95%;
 }
 
-.w-85 {
-  width: 85%;
-}
-
 .close {
   font-weight: 300;
   font-size: 2rem;
-}
-
-.close-white {
-  color: #fff;
-}
-
-.close-white:hover {
-  color: #fff;
-}
-
-.pointer {
-  cursor: pointer;
 }
 
 .modal-dialog {
@@ -92,30 +76,10 @@ a:hover {
   padding-left: 10px !important;
 }
 
-.modal-dialog p {
-  font-weight: 300;
-}
-
-button:focus {
-  outline: none;
-}
-
 .hr-small {
-    border: 0px;
-    border-top: 2px solid $golden;
-    width: 100px;
-}
-
-.border-golden {
-    border: 1px solid $golden;
-}
-
-.btn-circle {
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    -ms-border-radius: 200px;
-    -o-border-radius: 200px;
+  border: 0px;
+  border-top: 2px solid $golden;
+  width: 100px;
 }
 
 /* -----------------------------------
@@ -125,105 +89,97 @@ HEADINGS
 -------------------------------------*/
 
 @font-face {
-  font-family: myFirstFont;
+  font-family: England;
   src: url(../England_Signature_Italic.ttf);
 }
-
-
 
 h1,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Cabin', sans-serif;
-}
-
-// h3 {
-//     font-size: 25px;
-//     line-height: 30px;
-//     letter-spacing: 3px;
-//     color: #000;
-//     font-weight: 500;
-//     -webkit-transition: all 350ms ease-out;
-//     -o-transition: all 350ms ease-out;
-//     transition: all 350ms ease-out;
-//     position: relative;
-//     font-family: "Poppins";
-// }
-
-h3 {
-  font-size: 3rem;
-  color: #222;
-  letter-spacing: .5rem;
-  margin-right: -.5rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  animation: scale .5s forwards;
+  font-family: 'Cabin', sans-serif;
 }
 
 h1 {
-  text-transform: uppercase;
+  font-size: 3rem;
   font-weight: 600;
-  font-size: 3vw;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-family: myFirstFont;
-  font-size: 130px;
-  line-height: 140px;
+  font-family: England;
   color: #b68b2f57;
+  font-size: 4.5rem;
   font-weight: 500;
-  -webkit-transition: all 350ms ease-out;
-  -o-transition: all 350ms ease-out;
-  transition: all 350ms ease-out;
-  text-transform: none;
-  -moz-transition: all 350ms ease-out;
-  -ms-transition: all 350ms ease-out;
+  margin-bottom: -30px;
 }
 
-// h2 {
-//     font-size: 3rem;
-//     color: #222;
-//     letter-spacing: .5rem;
-//     margin-right: -.5rem;
-//     text-transform: uppercase;
-//     font-weight: 900;
-//     animation: scale .5s forwards;
-// }
+h3 {
+  color: #222;
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+}
 
 h5 {
-    color: $golden;
-    text-transform: uppercase;
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    -webkit-transition: all 350ms ease-out;
-    -o-transition: all 350ms ease-out;
-    transition: all 350ms ease-out;
-    position: relative;
-    font-family: "Poppins";
-    -moz-transition: all 350ms ease-out;
-    -ms-transition: all 350ms ease-out;
+  font-family: "Poppins";
+  color: $golden;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 p {
-    font-size: 14px;
-    line-height: 25px;
-    color: #000;
-    font-weight: 500;
-    -webkit-transition: all 350ms ease-out;
-    -o-transition: all 350ms ease-out;
-    transition: all 350ms ease-out;
-    position: relative;
-    font-family: "Poppins";
+  font-family: "Poppins";
+  color: #000;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 500;
 }
 
 footer p {
-  font-family: myFirstFont;
+  font-family: England;
   font-size: 40px;
 }
+
+
+/* -----------------------------------
+
+BUTTONS
+
+-------------------------------------*/
+
+button:focus {
+  outline: none;
+}
+
+.btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.btn-circle {
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+}
+
 
 
 /* -----------------------------------
@@ -231,55 +187,35 @@ footer p {
 NAVBAR
 
 -------------------------------------*/
-
-.logo-main {
-    width: 100px;
-  }
   
-  nav {
-    z-index: 2;
-  }
-  
-  .nav-item a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 12px;
-  }
-  
-  .navbar-toggler ion-icon {
-    font-size: 30px;
-  }
-  
-  @media (min-width: 768px) {
-    nav {
-      position: absolute !important;
-    }
-  }
-
-  .navbar-nav > li > a {
-    padding: 25px 8px;
-    font-size: 12px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 500;
-    -webkit-transition: all 350ms ease-out;
-    -o-transition: all 350ms ease-out;
-    transition: all 350ms ease-out;
-    position: relative;
-    font-family: "Poppins";
+.navbar-toggler ion-icon {
+  font-size: 30px;
 }
 
-#main-nav-sticky .navbar-nav > li > a {
-  padding: 15px 8px;
+.logo-main {
+  width: 100px;
+}
+
+.navbar-nav > li > a {
+  padding: 25px 8px;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  position: relative;
+  font-family: "Poppins";
 }
 
 .nav-item a:hover,
 .nav-item a:active {
   color: $golden;
 }
+
+#main-nav-sticky .navbar-nav > li > a {
+  padding: 15px 8px;
+}
+
 
 
 /* -----------------------------------
@@ -288,92 +224,82 @@ HEADER
 
 -------------------------------------*/
 
-.card-golden {
-    border: 1px solid $golden;
+header {
+  background: url(../img/hero-img.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh; 
 }
 
 
 
-.link-hover {
-    border: 2px solid transparent;
-}
+/* -----------------------------------
 
-.link-hover:hover {
-    border-bottom: 2px solid $golden;
-    transition-duration: 1s;
-}
+FORM
 
-.link-hover .link-icon-hover {
-    color: #fff;
-}
-
-.link-hover:hover .link-icon-hover {
-    color: $golden;
-    transition-duration: 1s;
-}
-
-
-
-
+-------------------------------------*/
 
 .form-group input,
 .form-group textarea,
 .form-group select {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 500;
-    font-family: "Poppins";
-    color: #000;
-    background: #f8f9fa;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Poppins";
+  color: #000;
+  background: #f8f9fa;
   border-width: 0 0 2px 0;
   border-color: $golden;
-  border-radius: 0; }
+  border-radius: 0; 
+}
 
 .form-control:focus {
   border-color: $golden;
-  box-shadow: none; }
-
-.register-modal .modal-header {
-  position: relative;
-  overflow: hidden;
-  color: black; }
-
-input,
-textarea {
-  color: #000; }
-
-
-
-
-  .btn {
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 20px;
-    font-weight: 500;
-    font-family: "Poppins";
-  }
-
-
-
-
-
- header {
-    background: url(../img/hero-img-blur.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh; 
+  box-shadow: none; 
 }
 
 
 
+
+/* -----------------------------------
+
+CONTACTS
+
+-------------------------------------*/
+
+
+.link-hover {
+  border: 2px solid transparent;
+}
+
+.link-hover:hover {
+  border-bottom: 2px solid $golden;
+  transition-duration: 1s;
+}
+
+.link-hover .link-icon-hover {
+  color: #fff;
+}
+
+.link-hover:hover .link-icon-hover {
+  color: $golden;
+  transition-duration: 1s;
+}
+
+
+
+/* -----------------------------------
+
+GALLERY
+
+-------------------------------------*/
 
 .carousel-control-next-icon {
   background-color: black;
   color: black !important;
 }
-
 
 .img-container {
   position: relative;
@@ -392,7 +318,6 @@ textarea {
   }
 }
 
-
 .hover-dark {
   background-color: transparent;
 }
@@ -401,7 +326,50 @@ textarea {
   background-color: rgba(0, 0, 0, 0.123);
 }
 
-    /* -----------------------------------  ANIMATIONS  -------------------------------------*/
+
+
+
+
+
+/* -----------------------------------
+
+QUERIES
+
+-------------------------------------*/
+
+@media (min-width: 768px) {
+
+  nav {
+    position: absolute !important;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+    margin-bottom: -40px;
+  }
+      
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
+/* -----------------------------------
+
+ANIMATIONS
+
+-------------------------------------*/
 
 .js--wp-1,
 .js--wp-2,
@@ -411,7 +379,8 @@ textarea {
 .js--wp-6,
 .js--wp-7,
 .js--wp-8 {
-  opacity: 0; }
+  opacity: 0; 
+}
 
 .js--wp-1 .animated,
 .js--wp-2 .animated,
@@ -435,5 +404,3 @@ textarea {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-
-
