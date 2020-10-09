@@ -3,6 +3,7 @@
 $('#year').text(new Date().getFullYear());
 
 
+$('.carousel').carousel()
 
 
 $(document).ready(function() {
@@ -18,31 +19,6 @@ $(document).ready(function() {
         offset: '60px;'
     });
 });
-
-
-
-
-// $("#gallery1").click(function(){
-//     $(".gallery-slider").removeClass("d-block");
-//     $(".gallery-slider").addClass("d-none");
-//     $("#gallery-slider1").removeClass("d-none");
-//     $("#gallery-slider1").addClass("d-block");
-// });
-
-// $("#gallery2").click(function(){
-//     $(".gallery-slider").removeClass("d-block");
-//     $(".gallery-slider").addClass("d-none");
-//     $("#gallery-slider2").removeClass("d-none");
-//     $("#gallery-slider2").addClass("d-block");
-// });
-
-// $("#gallery3").click(function(){
-//     $(".gallery-slider").removeClass("d-block");
-//     $(".gallery-slider").addClass("d-none");
-//     $("#gallery-slider3").removeClass("d-none");
-//     $("#gallery-slider3").addClass("d-block");
-// });
-
 
 
   
