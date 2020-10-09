@@ -124,8 +124,14 @@ HEADINGS
 
 -------------------------------------*/
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(../England_Signature_Italic.ttf);
+}
+
+
+
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -133,17 +139,27 @@ h6 {
     font-family: 'Cabin', sans-serif;
 }
 
+// h3 {
+//     font-size: 25px;
+//     line-height: 30px;
+//     letter-spacing: 3px;
+//     color: #000;
+//     font-weight: 500;
+//     -webkit-transition: all 350ms ease-out;
+//     -o-transition: all 350ms ease-out;
+//     transition: all 350ms ease-out;
+//     position: relative;
+//     font-family: "Poppins";
+// }
+
 h3 {
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: 3px;
-    color: #000;
-    font-weight: 500;
-    -webkit-transition: all 350ms ease-out;
-    -o-transition: all 350ms ease-out;
-    transition: all 350ms ease-out;
-    position: relative;
-    font-family: "Poppins";
+  font-size: 3rem;
+  color: #222;
+  letter-spacing: .5rem;
+  margin-right: -.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  animation: scale .5s forwards;
 }
 
 h1 {
@@ -153,14 +169,28 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
-    color: #222;
-    letter-spacing: .5rem;
-    margin-right: -.5rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    animation: scale .5s forwards;
+  font-family: myFirstFont;
+  font-size: 130px;
+  line-height: 140px;
+  color: #b68b2f57;
+  font-weight: 500;
+  -webkit-transition: all 350ms ease-out;
+  -o-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+  text-transform: none;
+  -moz-transition: all 350ms ease-out;
+  -ms-transition: all 350ms ease-out;
 }
+
+// h2 {
+//     font-size: 3rem;
+//     color: #222;
+//     letter-spacing: .5rem;
+//     margin-right: -.5rem;
+//     text-transform: uppercase;
+//     font-weight: 900;
+//     animation: scale .5s forwards;
+// }
 
 h5 {
     color: $golden;
@@ -189,6 +219,12 @@ p {
     position: relative;
     font-family: "Poppins";
 }
+
+footer p {
+  font-family: myFirstFont;
+  font-size: 40px;
+}
+
 
 /* -----------------------------------
 
@@ -222,8 +258,8 @@ NAVBAR
     }
   }
 
-  .navbar-nav>li>a {
-    padding: 30px 18px;
+  .navbar-nav > li > a {
+    padding: 25px 8px;
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
@@ -234,6 +270,10 @@ NAVBAR
     transition: all 350ms ease-out;
     position: relative;
     font-family: "Poppins";
+}
+
+#main-nav-sticky .navbar-nav > li > a {
+  padding: 15px 8px;
 }
 
 .nav-item a:hover,
@@ -284,7 +324,7 @@ HEADER
     font-weight: 500;
     font-family: "Poppins";
     color: #000;
-    background: rgba(255, 255, 255, 0.24);
+    background: #f8f9fa;
   border-width: 0 0 2px 0;
   border-color: $golden;
   border-radius: 0; }
@@ -329,6 +369,37 @@ textarea {
 
 
 
+.carousel-control-next-icon {
+  background-color: black;
+  color: black !important;
+}
+
+
+.img-container {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.hover-dark {
+  background-color: transparent;
+}
+
+.hover-dark:hover {
+  background-color: rgba(0, 0, 0, 0.123);
+}
 
     /* -----------------------------------  ANIMATIONS  -------------------------------------*/
 
@@ -364,3 +435,5 @@ textarea {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
+
+
