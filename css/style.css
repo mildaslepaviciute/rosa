@@ -85,7 +85,8 @@ h1 {
 
 h2 {
   font-family: England;
-  color: #b68b2f57;
+  color: #b68c2f;
+  opacity: 0.5;
   font-size: 4.5rem;
   font-weight: 500;
   margin-bottom: -30px; }
