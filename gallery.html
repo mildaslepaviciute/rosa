@@ -119,39 +119,51 @@
 
         <!-- CONTACTS -->
 
-        <section id="contacts" class="bg-black pt-5">
-            <div class="container">
+        <section class="bg-black pt-5">
+            <div id="contacts" class="container anchor">
                 <h3 class="text-center text-white">Contact Us</h3>
-                <hr class="hr-small mx-auto mt-4">
+                <hr class="hr-small mx-auto mt-4 mb-0">
                 <p class="text-center text-white mt-5">
                     Do you have any questions? Please do not hesitate to contact us directly.<br>
                     Our team will come back to you within a matter of hours to help you.
                 </p>
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                        <form id="emailForm" action="post" class="text-white p-3 p-sm-4 p-md-5 mb-4" novalidate>
+                        <form id="emailForm" class="text-white p-3 p-sm-4 p-md-5 mb-4" novalidate>
                             <div class="form-group row">
                                 <label class="col-md-3 col-form-label">Your name</label>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Name" name="Name">
+                                    <input type="text" class="form-control required" placeholder="Name" name="Name" required>
+                                    <div class="invalid-feedback">
+                                        This field is required
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputEmail1" class="col-md-3 col-form-label">Your email</label>
                                 <div class="col">
-                                    <input type="email" name="Email" class="form-control" id="inputEmail1" placeholder="Email">
+                                    <input type="email" name="Email" class="form-control required" id="inputEmail1" placeholder="Email" required>
+                                    <div class="invalid-feedback" id="invalid-email">
+                                        This field is required
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputPhoneNumber1" class="col-md-3 col-form-label">Subject</label>
                                 <div class="col">
-                                    <input type="tel" name="Subject" class="form-control" id="inputPhoneNumber1" placeholder="Subject">
+                                    <input type="text" name="Subject" class="form-control required" id="inputPhoneNumber1" placeholder="Subject" required>
+                                    <div class="invalid-feedback">
+                                        This field is required
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputMessage" class="col-md-3 col-form-label">Your message</label>
                                 <div class="col">
-                                    <textarea class="form-control" name="Message" id="inputMessage" rows="2"></textarea>
+                                    <textarea class="form-control required" name="Message" id="inputMessage" rows="2" required ></textarea>
+                                    <div class="invalid-feedback">
+                                        This field is required
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group row mb-0">
@@ -371,6 +383,7 @@
         <script src="js/animate.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
+        <script src="js/form.js"></script>
     
     </body>
 </html>
