@@ -3,8 +3,12 @@
 $('#year').text(new Date().getFullYear());
 
 
+// Init carousel
+
 $('.carousel').carousel()
 
+
+// Sticky navbar
 
 $(document).ready(function() {
     $('.js--sticky-navbar-offset').waypoint(function(direction) {
@@ -20,6 +24,8 @@ $(document).ready(function() {
     });
 });
 
+
+// Hide mobile menu after click
 
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
