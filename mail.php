@@ -5,7 +5,7 @@
  $subject = $_POST["subject"];
  $content = $_POST["message"];
 
- $toEmail = "tadusie@gmail.com";
+ $toEmail = "info@anli-design.ie";
  $mailHeaders = "From: " . $name . "<". $email . ">\r\n";
  
  mail($toEmail, $subject, $content, $mailHeaders)
