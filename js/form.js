@@ -21,10 +21,10 @@ $(document).ready(function () {
         const element = el.first()
         element.addClass("show")
 
-        //alert off after 2000ms
+        //alert off after 5000ms
         setTimeout(() => {
            element.remove()
-        }, 2000)
+        }, 5000)
     };
 
     validateEmail = function(element) {
