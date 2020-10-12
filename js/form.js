@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
     const $successAlert = $('<div class="col-md-9 offset-md-3 alert alert-success alert-dismissible fade show mt-4" role="alert">'
-       + '<strong>Congratulations!</strong> Message was successfully sent.'
+       + '<strong>Congratulations!</strong> Message was sent successfully.'
        + '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'
        + '<span aria-hidden="true">&times;</span>'
        + '</button>'
@@ -18,7 +18,13 @@ $(document).ready(function () {
 
     const showAlert = function (el, form){                   
         form.append(el)
-        el.first().addClass("show")
+        const element = el.first()
+        element.addClass("show")
+
+        //alert off after 2000ms
+        setTimeout(() => {
+           element.remove()
+        }, 2000)
     };
 
     validateEmail = function(element) {
@@ -54,7 +60,7 @@ $(document).ready(function () {
     checkForm = function (f) {
         var isValid = true
         $(f).find(".required").each(function () {
-            if (!checkThis(this) || !validateEmail) {
+            if (!checkThis(this) || !validateEmail(this)) {
                 isValid = false
             }
         })
@@ -75,11 +81,8 @@ $(document).ready(function () {
     $("#emailForm").submit(function (e) {
         var form = $(this)
         if (!checkForm(form)) {
-                         showAlert($dangerAlert, form)   //IŠTRINTI ŠITĄ EILUTĘ, KAI BUS BACKEND !!!         
             return false
         }
-
-                        showAlert($successAlert, form) //IŠTRINTI ŠITĄ EILUTĘ, KAI BUS BACKEND !!!  
 
         // Proper JSON object with form values
         formData = {
@@ -95,16 +98,14 @@ $(document).ready(function () {
             data : formData,
             success: function(data, textStatus, jqXHR)
             {
-                // showAlert($successAlert, form)  //ATKOMENTUOTI ŠITĄ EILUTĘ, KAI BUS BACKEND !!!    
+                showAlert($successAlert, form)  
 
-                //If mail was sent successfully, reset the form.
-                if (data.code) {
-                    $('#emailForm').closest('form').find(":input").val("")
-                }
+                //reset form
+                $('#emailForm').closest('form').find(":input").val("")
             },
             error: function (jqXHR, textStatus, errorThrown)
             {
-                //showAlert($dangerAlert, form)  //ATKOMENTUOTI ŠITĄ EILUTĘ, KAI BUS BACKEND !!!    
+                showAlert($dangerAlert, form)
             }
        })
 
