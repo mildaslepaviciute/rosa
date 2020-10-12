@@ -24,3 +24,6 @@ $(document).ready(function() {
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
+
+location.hash = target;
+var targetOffset = $target.offset().top - 70;

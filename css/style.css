@@ -181,7 +181,6 @@ HEADER
 -------------------------------------*/
 header {
   background: url(../img/hero-img.jpg);
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -276,7 +275,10 @@ QUERIES
     font-size: 3rem; }
 
   h4 {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+
+  header {
+    background-attachment: fixed; } }
 /* -----------------------------------
 
 ANIMATIONS
