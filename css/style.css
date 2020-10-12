@@ -291,7 +291,9 @@ ANIMATIONS
 .js--wp-5,
 .js--wp-6,
 .js--wp-7,
-.js--wp-8 {
+.js--wp-8,
+.js--wp-9,
+.js--wp-10 {
   opacity: 0; }
 
 .js--wp-1 .animated,
@@ -301,7 +303,9 @@ ANIMATIONS
 .js--wp-5 .animated,
 .js--wp-6 .animated,
 .js--wp-7 .animated,
-.js--wp-8 .animated {
+.js--wp-8 .animated,
+.js--wp-9 .animated,
+.js--wp-10 .animated {
   opacity: 1;
   -webkit-animation-duration: 0.9s;
   animation-duration: 0.9s; }
@@ -313,5 +317,25 @@ ANIMATIONS
 .js--wp-2 {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s; }
+
+.js--wp-7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.js--wp-8 {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s; }
+
+.js--wp-9 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.js--wp-10 {
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s; }
+
+.anchor {
+  padding-top: 100px;
+  margin-top: -100px; }
 
 /*# sourceMappingURL=style.css.map */
